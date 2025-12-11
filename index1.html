@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+     
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pogula Prashanth</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Prashanth</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="PogulaPrashanthResume.pdf" download>Download Resume</a>
+        <a href="#home">
+  <img id="navProfile" src="pp.jpg" alt="Profile" />
+</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / About -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h1>Hi, I'm Pogula Prashanth</h1>
+        <h4><p class="subtitle">Software Developer • B.Tech CSE • Building simple, reliable web apps</p></h4>
+        <div class="cta">
+          <a class="btn" href="PogulaPrashanthResume.pdf" download>Download Resume</a>
+          <a class="btn outline" href="#projects">View Projects</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I’m a final year Computer Science student (B.Tech CSE). I enjoy solving problems with clean code, building web apps, and learning new technologies. Quick learner, strong communicator, and passionate about building user-centric products.</p>
+          <ul class="meta">
+            <li><strong>Location:</strong> Narakkapet, Warangal, Telangana</li>
+            <li><strong>Email:</strong> pogulaprashanthyadav143@gmail.com</li>
+            <li><strong>Phone:</strong> +91 9908656185</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pogula-prashanth-3ab746286" target="_blank">View Profile</a></li>
+          </ul>
+        </div>
+        <div class="skills-quick">
+          <h3>Strengths</h3>
+          <p>•Quick Learner <br>
+             • Hard Working <br>
+             • Self Confidence<br>
+             • Effective Communication</p>
+          <h3>Hobbies</h3>
+          <p>•Creative Activities<br>
+             • Travelling</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Languages</h4>
+          <p>Java, Python</p>
+        </div>
+        <div class="skill">
+          <h4>Web</h4>
+          <p>HTML5, CSS3, JavaScript, PHP</p>
+        </div>
+        <div class="skill">
+          <h4>Database</h4>
+          <p>MySQL</p>
+        </div>
+        <div class="skill">
+          <h4>Tools</h4>
+          <p>Microsoft Office</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Pet Animal Adoption System</h3>
+          <p>Website designed to connect adopters with animal shelters to streamline the adoption process.</p>
+          <p class="muted">Technologies: HTML, CSS, PHP, MySQL</p>
+          <div class="project-links">
+            <!-- Replace with real repo links when available -->
+            <a class="outline" href="pets" target="_blank">View Code</a>
+          </div>
+        </article>
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container section">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-list">
+        <div class="edu-item">
+          <h3>Balaji Institute Of Technology & Science</h3>
+          <span class="muted">B.Tech in CSE — Aug 2021 – Aug 2025</span>
+          <p>Narsampet</p>
+        </div>
+        <div class="edu-item">
+          <h3>Shivani Junior Collage</h3>
+          <span class="muted">Intermediate MPC — Jun 2019 – Jul 2021</span>
+        </div>
+        <div class="edu-item">
+          <h3>Kakatiya brilliant stars high school</h3>
+          <span class="muted">SSC — Jun 2018 – APR 2019</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <style>
+    body { font-family: Arial, sans-serif; background:#f5f5f5; padding:20px; }
+    form { background:#fff; padding:20px; border-radius:10px; max-width:400px; margin:auto; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    label { display:block; margin-top:10px; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc; }
+    button { margin-top:15px; padding:10px 20px; background:#0ea5a4; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background:#0b8a87; }
+    #status { text-align:center; margin-top:15px; font-weight:bold; }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Contact Me</h2>
+
+<form id="contactForm">
+  <label>Name:</label>
+  <input type="text" name="from_name" placeholder="Your Name" required>
+
+  <label>Email:</label>
+  <input type="email" name="to_email" placeholder="Your Email" required>
+
+  <label>Message:</label>
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+<p id="status"></p>
+
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS with your Public Key
+  emailjs.init('jezKWFYge9pGC2JMk'); // replace with your EmailJS public key
+
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent page reload
+
+    // Replace these with your actual IDs from EmailJS
+    const serviceID = "service_rx5hg8o";
+    const templateID = "template_8ozgppa";
+    
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        status.style.color = "green";
+        status.innerHTML = "✅ Message sent successfully!";
+        form.reset();
+      }, (err) => {
+        status.style.color = "red";
+        status.innerHTML = "❌ Failed to send message: " + JSON.stringify(err);
+      });
+  });
+</script>
+
+<style>
+:root{
+  --bg:#fbfbfd;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --accent:#0ea5a4; /* teal */
+  --glass: rgba(255,255,255,0.6);
+  --radius:14px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#f8fafc 0%,var(--bg) 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+
+body {
+  background-image: url('bgg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container{max-width:1100px;margin:0 auto;padding:28px;}
+
+.site-header{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.6);backdrop-filter: blur(6px);border-bottom:1px solid rgba(15,23,42,0.04);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
+.logo{font-weight:700;color:var(--text);text-decoration:none;font-size:1.1rem}
+.nav{display:flex;gap:14px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:500}
+.nav a:hover{color:var(--text);background:rgba(14,165,164,0.06)}
+#navProfile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0ea5a4; /* optional outline */
+}
+
+.btn{background:var(--accent);color:#fff;padding:9px 12px;border-radius:12px;text-decoration:none;font-weight:600;display:inline-block}
+.btn.outline{background:transparent;color:var(--accent);border:1px solid rgba(14,165,164,0.14)}
+.menu-toggle{display:none;background:transparent;border:0;font-size:20px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:60px 0}
+.hero-left h1{font-size:2.2rem;margin:0}
+.hero-left .subtitle{color:var(--muted);margin-top:8px;margin-bottom:18px}
+.accent{color:var(--accent)}
+.hero-right img{width:100%;max-width:340px;border-radius:18px;box-shadow:0 10px 30px rgba(2,6,23,0.06);transform:translateY(0);transition:transform .6s ease}
+
+/* Sections */
+.section{padding:26px 0}
+.section-title{font-size:1.25rem;margin-bottom:14px}
+.about-grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+.meta{list-style:none;padding:0;margin:10px 0;color:var(--muted)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.skill{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.project-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 26px rgba(2,6,23,0.04)}
+.muted{color:var(--muted)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+.contact-form label{display:block;margin-bottom:12px}
+.contact-form input, .contact-form textarea{
+  width:100%;padding:10px;border-radius:10px;border:1px solid #e6e8eb;background:#fff
+}
+.contact-form button{margin-top:8px}
+
+/* Footer */
+.site-footer{padding:28px 0;text-align:center;color:var(--muted);font-size:0.95rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:18px;padding:36px 0}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .menu-toggle{display:block}
+  .hero-right{text-align:center}
+}
+
+/* simple animation */
+.hero-right img:hover{transform:translateY(-6px) rotate(-1deg)}
+</style>
